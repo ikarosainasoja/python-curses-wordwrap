@@ -35,7 +35,7 @@ def main(stdscr):
     stdscr.clear()
     stdscr.refresh()
 
-    my_window = curses.newwin(5, 20, 1, 2)
+    my_window = curses.newwin(6, 25, 1, 2)
     my_window.clear()
 
     # use the word wrapper
