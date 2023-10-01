@@ -25,6 +25,7 @@ Example:
 import curses
 from curses import wrapper
 
+# import the word wrapper
 import word_wrapper as ww
 
 def main(stdscr):
@@ -37,6 +38,7 @@ def main(stdscr):
   my_window = curses.newwin(5, 20, 1, 2)
   my_window.clear()
 
+  # use the word wrapper
   ww.wordwrap(my_window, message)
 
   my_window.refresh()
@@ -44,5 +46,6 @@ def main(stdscr):
 
 wrapper(main)
 ```
+Note: Please don't be misled by the 'wrapper' imported from the Curses library; it is unrelated to the Word wrapper. It simply serves as a function to automatically handle the initialization and exit processes of a Curses application.
 
 Any comments and critique are welcome!
