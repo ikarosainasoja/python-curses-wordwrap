@@ -43,7 +43,7 @@ def main(stdscr):
     my_window.clear()
     my_window.box()
 
-    # maybe we wan't another window inside the first one
+    # maybe we want another window inside the first one
     inner_window = my_window.derwin(8, 18, 1, 1)
     inner_window.clear()
 
