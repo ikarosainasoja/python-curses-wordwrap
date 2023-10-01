@@ -30,19 +30,19 @@ import word_wrapper as ww
 
 def main(stdscr):
 
-  message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nNam tincidunt dui quis vestibulum feugiat."
+    message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nNam tincidunt dui quis vestibulum feugiat."
 
-  stdscr.clear()
-  stdscr.refresh()
+    stdscr.clear()
+    stdscr.refresh()
 
-  my_window = curses.newwin(5, 20, 1, 2)
-  my_window.clear()
+    my_window = curses.newwin(5, 20, 1, 2)
+    my_window.clear()
 
-  # use the word wrapper
-  ww.wordwrap(my_window, message)
+    # use the word wrapper
+    ww.wordwrap(my_window, message)
 
-  my_window.refresh()
-  stdscr.getch()
+    my_window.refresh()
+    stdscr.getch()
 
 wrapper(main)
 ```
