@@ -1,5 +1,7 @@
 # Custom word wrapper for Python Curses
 
+![Python Curses word wrapper image](https://github.com/ikarosainasoja/misc-files/blob/main/img/python-curses-wordwrap.png)
+
 This module employs regular expressions to segment the input string into discrete components, such as words and spaces. It attempts to insert these components individually into the container window, ensuring proper word wrapping.
 
 ## Using the word wrapper
