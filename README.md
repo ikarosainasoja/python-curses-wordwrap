@@ -6,7 +6,7 @@ This module employs regular expressions to segment the input string into discret
 
 ## Using the word wrapper
 
-The simplest way to utilize this module is to put the _word_wrapper.py_ file in the same directory as the file requiring word wrapping.
+The simplest way to utilize this module is to download the _word_wrapper.py_ file, and copying it into the same directory as the file requiring word wrapping.
 
 Import the module inside your main python file with `ìmport word_wrapper`
 
@@ -18,9 +18,9 @@ To use the wrapper in your code, call the _wordwrap_ function and provide the re
 
 | Argument | Description |
 | --- | --- |
-| _window_ | is the name of the Curses window to print in. This can also be a name of a subwin or derwin. |
-| _string_ | is the name of the variable that is holding the string to be wrapped. Line breaks and other whitespace characters are processed normally. |
-| _attr_ | is an optional Curses text attribute, e.g. curses.A_REVERSE. If left blank, it deafults as 0 (no attribute). |
+| _window_ | The name of the Curses window to print in. This can also be a name of a subwin or derwin. |
+| _string_ | The name of the variable that is holding the string to be wrapped. Line breaks and other whitespace characters are processed normally. |
+| _attr_ | An optional Curses text attribute, e.g. curses.A_REVERSE. If left blank, it deafults as 0 (no attribute). |
 
 Example:
 ```python
@@ -62,6 +62,6 @@ def main(stdscr):
 # end curses application
 wrapper(main)
 ```
-Note: Please don't be misled by the 'wrapper' imported from the Curses library; it is unrelated to the Word wrapper. It simply serves as a function to automatically handle the initialization and exit processes of a Curses application.
+About the above example: Please don't be misled by the 'wrapper' imported from the Curses library; it is unrelated to the Word wrapper. It simply serves as a function to automatically handle the initialization and exit processes of a Curses application.
 
 Any comments and critique are welcome!
